@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Appium.WebDriver" Version="4.3.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.5" />
 
@@ -24,6 +25,12 @@
 
     
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    
+
+    
+
+    
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
     
   </ItemGroup>
 

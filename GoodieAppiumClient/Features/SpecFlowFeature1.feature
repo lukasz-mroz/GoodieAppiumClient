@@ -7,3 +7,5 @@ Scenario: Perform simple login test
       | email        | password |
       | all@moakt.cc | 123456   |
     And I select login
+    // Expected result
+    

@@ -8,6 +8,11 @@ namespace AppiumClient
   {
     private readonly IConfiguration _configuration;
 
+    public Settings GetSettings()
+    {
+      return _configuration.Get<Settings>();
+    }
+
     public ConfigurationProvider()
     {
       _configuration = new ConfigurationBuilder()
