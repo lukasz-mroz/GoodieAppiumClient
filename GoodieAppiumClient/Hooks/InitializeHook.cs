@@ -20,8 +20,7 @@ namespace GoodieAppiumClient.Hooks
     [BeforeScenario]
     public void Initialize()
     {
-      AndroidDriver appiumDriver = new AppiumDriver();
-      _scenarioContext.Set(appiumDriver.I);
+
     }
 
   }
