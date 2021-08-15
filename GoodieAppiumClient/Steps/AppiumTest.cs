@@ -28,23 +28,8 @@ namespace GoodieAppiumClient.Steps
     {
       _welcomeScreenPage.LoginIn();
       _loginPage.LoginByEmail("all@moakt.cc", "123456");
-
-      var expText = "Najlepsze okazje w Twojej okolicy";
-      var actText = _permissionLocalizationPage.textBestOffers.Text;
-      Assert.AreEqual(expText, actText);
-
-      _permissionLocalizationPage.SkipButton();
     }
 
-    [Given(@"I do sth")]
-    public void GivenIDoSth()
-    {
-    }
-
-    [Then(@"I select sth")]
-    public void ThenISelectSth()
-    {
-    }
 
   }
 }

@@ -10,18 +10,22 @@ namespace AppiumClient
   {
 
     //private readonly Settings _settings;
-    public AppiumDriver<AndroidElement> Driver { get; set; }
+    public static AndroidDriver<AndroidElement> Driver { get; set; }
 
-    public AndroidDriver<AppiumWebElement> InitializeAppium()
+    public AndroidDriver<AndroidElement> InitializeAppium()
     {
+      // capabilities of device
       var driverOption = new AppiumOptions();
       driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformName, "Android");
       driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, "7.0");
       driverOption.AddAdditionalCapability(MobileCapabilityType.DeviceName, "XVV7N17317000281");
       driverOption.AddAdditionalCapability(MobileCapabilityType.App, "D:\\Goodie-epicDPPRD-25787-cps-discount-changes-uat-3.6.393-DEBUG.apk");
+      var url = new Uri("http://localhost:4723/wd/hub");
 
-      return new AndroidDriver<AppiumWebElement>(new Uri("http://localhost:4723/wd/hub"),driverOption);
-
+      // assign instance of specific device to Driver
+      Driver = new AndroidDriver<AndroidElement>(url, driverOption);
+      
+      return new AndroidDriver<AndroidElement>(url, driverOption);
     }
   }
 }
