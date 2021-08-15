@@ -32,17 +32,6 @@ namespace GoodieAppiumClient
       male.Click();
     }
 
-    public void ChooseSex(AndroidElement sex)
-    {
-      if (sex == male)
-      {
-        male.Click();
-      }
-      if (sex == female)
-      {
-        female.Click();
-      }
-    }
 
     public void Login()
     {

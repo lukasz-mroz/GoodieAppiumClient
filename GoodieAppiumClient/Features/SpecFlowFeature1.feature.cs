@@ -100,19 +100,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "email",
-                            "password"});
-                table1.AddRow(new string[] {
-                            "all@moakt.cc",
-                            "123456"});
 #line 5
-        testRunner.Given("I enter email and password", ((string)(null)), table1, "Given ");
+        testRunner.Given("I enter email and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 6
         testRunner.And("I do sth", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 9
+#line 7
         testRunner.Then("I select sth", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
