@@ -1,11 +1,9 @@
-﻿Feature: AppiumTest
+﻿Feature: SpecFlowFeature1
 
-@smoke 
-Scenario: Perform simple login test
-    Given I launch the application
-    Given I enter email and password
-      | email        | password |
-      | all@moakt.cc | 123456   |
-    And I select login
-    // Expected result
-    
+
+Scenario: Perform Simple Appium Test
+        Given I enter email and password
+        | email        | password |
+        | all@moakt.cc | 123456   |
+        And I do sth
+        Then I select sth

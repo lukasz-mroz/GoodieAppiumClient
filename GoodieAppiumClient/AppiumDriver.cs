@@ -6,7 +6,7 @@ using OpenQA.Selenium.Appium.Enums;
 
 namespace AppiumClient
 {
-  public class DriverHelper
+  public class AppiumDriver
   {
 
     private readonly Settings _settings;

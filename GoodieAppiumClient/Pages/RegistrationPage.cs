@@ -4,7 +4,7 @@ using OpenQA.Selenium.Interactions;
 
 namespace GoodieAppiumClient
 {
-  public class RegistrationPage : DriverHelper
+  public class RegistrationPage : AppiumDriver
   {
 
     // Locators

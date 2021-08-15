@@ -3,7 +3,7 @@ using OpenQA.Selenium.Appium.Android;
 
 namespace GoodieAppiumClient
 {
-  public class PermissionLocalizationPage : DriverHelper
+  public class PermissionLocalizationPage : AppiumDriver
   {
     // Page locators
     public AndroidElement shareLocalizationButton => Driver.FindElementByXPath(

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using AppiumClient;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using TechTalk.SpecFlow;
@@ -20,7 +21,8 @@ namespace GoodieAppiumClient.Hooks
     [BeforeScenario]
     public void Initialize()
     {
-
+      AppiumDriver appiumDriver = new AppiumDriver();
+      appiumDriver.InitializeAppium();
     }
 
   }
