@@ -1,5 +1,5 @@
-﻿Feature: SpecFlowFeature1
-	Simple calculator for adding two numbers
+﻿Feature: LoginFeature
+	Normal process using known credentials
 
 @smoke
 Scenario: Perform simple login
