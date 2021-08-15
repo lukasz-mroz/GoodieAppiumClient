@@ -11,7 +11,7 @@ namespace AppiumClient
   {
 
     //private readonly Settings _settings;
-    public  static AndroidDriver<AndroidElement> Driver { get; set; }
+    public static AndroidDriver<AndroidElement> Driver { get; set; }
 
     public AndroidDriver<AndroidElement> InitializeAppium()
     {
