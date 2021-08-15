@@ -106,9 +106,6 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I enter email and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.And("I choose Male gender", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 8
  testRunner.Then("I should see WelcomeScreen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
