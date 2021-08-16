@@ -3,7 +3,7 @@ using OpenQA.Selenium.Appium.Android;
 
 namespace GoodieAppiumClient
 {
-  public class YourGoodiePage : DriverHelper
+  public class YourGoodiePage : AppiumDriver
   {
     // Locators
     private AndroidElement searchField => Driver.FindElementById("pl.goodie.uat.debug:id/search");

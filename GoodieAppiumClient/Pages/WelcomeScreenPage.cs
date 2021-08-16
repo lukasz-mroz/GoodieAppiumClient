@@ -3,7 +3,7 @@ using OpenQA.Selenium.Appium.Android;
 
 namespace GoodieAppiumClient
 {
-  public class WelcomeScreenPage : DriverHelper
+  public class WelcomeScreenPage : AppiumDriver
   {
     // Locators
     AndroidElement guestButton => Driver.FindElementById("pl.goodie.uat.debug:id/guestLoginButton");
