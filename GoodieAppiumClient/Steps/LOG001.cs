@@ -30,7 +30,7 @@ namespace GoodieAppiumClient.Features
     [Given(@"I enter (.*) and (.*)")]
     public void GivenIEnterAnd(string p0, string p1)
     {
-      _loginPage.LoginByEmail();
+      _loginPage.LoginByEmail(p0,p1);
     }
 
     [When(@"I try to login")]
