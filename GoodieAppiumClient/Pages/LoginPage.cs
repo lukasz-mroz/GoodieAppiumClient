@@ -33,12 +33,12 @@ namespace GoodieAppiumClient
     {
       emaiLoginField.SendKeys(login);
       emailPasswordField.SendKeys(password);
-      loginByEmailButton.Click();
+     
     }
 
-    public void Login()
+    public void LoginTap()
     {
-      throw new NotImplementedException();
+      loginByEmailButton.Click();
     }
   }
 }

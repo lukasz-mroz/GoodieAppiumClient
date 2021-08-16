@@ -1,7 +1,16 @@
-﻿Feature: LoginFeature
-	Normal process using known credentials
+﻿Feature: SpecFlowFeature1
+	Simple calculator for adding two numbers
 
-@smoke
-Scenario: Perform simple login
-	Given I enter email and password
-	Then I should see WelcomeScreen
+@mytag
+Scenario: Add two numbers
+	Given the first number is 50
+	And the second number is 70
+	When the two numbers are added
+	Then the result should be 120
+
+
+Examples:
+  | First | Second | Result |
+  | 50    | 70     | 120    |
+  | 30    | 40     | 70     |
+  | 60    | 30     | 90     |
