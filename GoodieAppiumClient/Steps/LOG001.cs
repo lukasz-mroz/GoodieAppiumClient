@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Threading;
+using AppiumClient;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace GoodieAppiumClient.Features
 {
   [Binding]
-  public class LOG001
+  public class LOG001 : AppiumDriver
   {
     private readonly WelcomeScreenPage _welcomeScreen;
     private readonly LoginPage _loginPage;
@@ -20,29 +21,31 @@ namespace GoodieAppiumClient.Features
     }
 
 
-    [Given(@"I click login")]
+    [Given(@"I click login on WelcomeScreen")]
     public void GivenIClickLogin()
     {
-      Thread.Sleep(3000);
+      Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
       _welcomeScreen.LoginIn();
     }
 
-    [Given(@"I enter (.*) and (.*)")]
+    [Given(@"I enter on LoginPage (.*) and (.*)")]
     public void GivenIEnterAnd(string p0, string p1)
     {
+      Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
       _loginPage.LoginByEmail(p0,p1);
+
     }
 
-    [When(@"I try to login")]
+    [When(@"I try to login on LoginPage")]
     public void WhenITryToLogin()
     {
       _loginPage.LoginTap();
     }
 
-    [Then(@"I should see WelcomeScreen")]
+    [Then(@"I should see PermissionLocalizationPage")]
     public void ThenIShouldSeeWelcomeScreen()
     {
-      Thread.Sleep(4000);
+      Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
       var visibleButton = _permissionLocalizationPage.skipButton.Displayed;
       Assert.AreEqual(true, visibleButton);
     }

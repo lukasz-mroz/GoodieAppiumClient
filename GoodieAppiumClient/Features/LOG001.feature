@@ -2,12 +2,12 @@
 	Affected region: Login
 	Login with email starting from welcome screen
 
-@mytag
+@smoke
 Scenario: Perform simple login
-	Given I click login
-	And I enter <Login> and <Password>
-	When I try to login
-	Then I should see WelcomeScreen
+	Given I click login on WelcomeScreen
+	And I enter on LoginPage <Login> and <Password>
+	When I try to login on LoginPage
+	Then I should see PermissionLocalizationPage
 
 	Examples:
 		| Login           | Password |

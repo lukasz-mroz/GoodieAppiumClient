@@ -18,8 +18,8 @@ namespace AppiumClient
       // capabilities of device
       var driverOption = new AppiumOptions();
       driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformName, "Android");
-      driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, "7.0");
-      driverOption.AddAdditionalCapability(MobileCapabilityType.DeviceName, "XVV7N17317000281");
+      driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, "10.0");
+      driverOption.AddAdditionalCapability(MobileCapabilityType.DeviceName, "e589b3bb");
       driverOption.AddAdditionalCapability(MobileCapabilityType.App, "D:\\Goodie-epicDPPRD-25787-cps-discount-changes-uat-3.6.393-DEBUG.apk");
       var url = new Uri("http://localhost:4723/wd/hub");
 

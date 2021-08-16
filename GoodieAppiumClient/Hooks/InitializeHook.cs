@@ -12,17 +12,23 @@ namespace GoodieAppiumClient.Hooks
   class InitializeHook
   {
     private readonly ScenarioContext _scenarioContext;
+    private readonly AppiumDriver _appium;
 
-    public InitializeHook(ScenarioContext scenarioContext)
+    public InitializeHook(ScenarioContext scenarioContext, AppiumDriver appium)
     {
       _scenarioContext = scenarioContext;
+      _appium = appium;
     }
 
     [BeforeScenario]
     public void Initialize()
     {
-      AppiumDriver appiumDriver = new AppiumDriver();
-      appiumDriver.InitializeAppium();
+      _appium.InitializeAppium();
+    }
+
+    [AfterScenario]
+    public void RunAfterScenario()
+    {
     }
 
   }
