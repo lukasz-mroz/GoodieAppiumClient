@@ -24,7 +24,8 @@ namespace GoodieAppiumClient.Hooks
     [BeforeScenario]
     public void Initialize()
     {
-      _appium.InitializeAppium();
+      AppiumServer.StartServerIfShouldRunLocally();
+      AppiumManager.InitializeAppium();
       
     }
 

@@ -17,8 +17,24 @@ namespace AppiumClient
     public static bool IsOnIOS => Platform == PlatfornEnum.IOS;
     public static bool IsOnAndroid => Platform == PlatfornEnum.Android;
 
+    public static void ResetApp()
+    {
+      if (!AppiumServer.IsServerRunning)
+      {
+        AppiumServer.StartServerIfShouldRunLocally();
+      }
 
-    public AndroidDriver<AndroidElement> InitializeAppium()
+      if (Driver != null)
+      {
+        Driver.ResetApp();
+      }
+      else
+      {
+        InitializeAppium();
+      }
+    }
+
+    public static AndroidDriver<AndroidElement> InitializeAppium()
     {
       // capabilities of device
       var driverOption = new AppiumOptions();
@@ -26,10 +42,9 @@ namespace AppiumClient
       driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, AndroidSettings.platformVersion);
       driverOption.AddAdditionalCapability(MobileCapabilityType.DeviceName, AndroidSettings.deviceName);
       driverOption.AddAdditionalCapability(MobileCapabilityType.App, AndroidSettings.app);
-      var url = new Uri(Global.ServerUri);
 
       // assign instance of specific device to Driver
-      Driver = new AndroidDriver<AndroidElement>(url, driverOption);
+      Driver = new AndroidDriver<AndroidElement>(AppiumServer.ServerUri, driverOption);
       var driver = Driver;
 
       return driver;
