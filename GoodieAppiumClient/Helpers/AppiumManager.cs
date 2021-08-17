@@ -50,7 +50,7 @@ namespace AppiumClient
       return driver;
     }
 
-    public void CloseDriver()
+    public static void CloseDriver()
     {
       Driver.Quit();
     }

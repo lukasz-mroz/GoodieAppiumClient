@@ -13,26 +13,35 @@ namespace GoodieAppiumClient.Hooks
   class InitializeHook
   {
     private readonly ScenarioContext _scenarioContext;
-    private readonly AppiumManager _appium;
 
-    public InitializeHook(ScenarioContext scenarioContext, AppiumManager appium)
+    public InitializeHook(ScenarioContext scenarioContext)
     {
       _scenarioContext = scenarioContext;
-      _appium = appium;
+    }
+
+    [BeforeTestRun]
+    public static void BeforeTestRun()
+    {
+      AppiumServer.StartServerIfShouldRunLocally();
+    }
+
+    [AfterTestRun]
+    public static void AfterTestRun()
+    {
+      AppiumManager.CloseDriver();
+      AppiumServer.StopLocalService();
     }
 
     [BeforeScenario]
     public void Initialize()
     {
-      AppiumServer.StartServerIfShouldRunLocally();
-      AppiumManager.InitializeAppium();
-      
+      AppiumManager.ResetApp();
     }
 
     [AfterScenario]
     public void RunAfterScenario()
     {
-      _appium.CloseDriver();
+
     }
 
   }

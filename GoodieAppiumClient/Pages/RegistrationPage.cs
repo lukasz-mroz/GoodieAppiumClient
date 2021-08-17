@@ -36,7 +36,7 @@ namespace GoodieAppiumClient
 
     public void Login()
     {
-      throw new System.NotImplementedException();
+      registrationLoginButton.Click();
     }
   }
 
