@@ -1,10 +1,11 @@
 ﻿using AppiumClient;
+using GoodieAppiumClient.Pages;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Interactions;
 
 namespace GoodieAppiumClient
 {
-  public class RegistrationPage : AppiumDriver
+  public class RegistrationPage : BasePage
   {
 
     // Locators

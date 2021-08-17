@@ -1,9 +1,10 @@
 ﻿using AppiumClient;
+using GoodieAppiumClient.Pages;
 using OpenQA.Selenium.Appium.Android;
 
 namespace GoodieAppiumClient
 {
-  public class PermissionLocalizationPage : AppiumDriver
+  public class PermissionLocalizationPage : BasePage
   {
     // Page locators
     public AndroidElement shareLocalizationButton => Driver.FindElementByXPath(

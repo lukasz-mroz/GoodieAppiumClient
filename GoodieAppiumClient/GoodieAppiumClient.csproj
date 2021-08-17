@@ -31,8 +31,38 @@
     
 
     
+    <PackageReference Include="SpecResults" Version="0.1.0.7" />
+    
+
+    
+
+    
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
     
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Settings\AndroidSettings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AndroidSettings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Settings\Global.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Global.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Settings\AndroidSettings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AndroidSettings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Settings\Global.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Global.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

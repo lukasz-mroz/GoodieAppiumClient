@@ -7,7 +7,7 @@ using TechTalk.SpecFlow;
 namespace GoodieAppiumClient.Features
 {
   [Binding]
-  public class LOG001 : AppiumDriver
+  public class LOG001 : AppiumManager
   {
     private readonly WelcomeScreenPage _welcomeScreen;
     private readonly LoginPage _loginPage;
