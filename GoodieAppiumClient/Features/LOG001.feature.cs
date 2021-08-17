@@ -78,6 +78,7 @@ namespace GoodieAppiumClient.Features
         [NUnit.Framework.CategoryAttribute("smoke")]
         [NUnit.Framework.TestCaseAttribute("all@moakt.cc", "123456", null)]
         [NUnit.Framework.TestCaseAttribute("dziki@jmail.ovh", "123456", null)]
+        [NUnit.Framework.TestCaseAttribute("dziki@moakt.cc", "123456", null)]
         public virtual void PerformSimpleLogin(string login, string password, string[] exampleTags)
         {
             string[] @__tags = new string[] {
