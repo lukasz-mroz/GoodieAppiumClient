@@ -13,3 +13,5 @@ Scenario: Perform simple login
 		| Login           | Password |
 		| all@moakt.cc    | 123456   |
 		| dziki@jmail.ovh | 123456   |
+		| dziki@moakt.cc  | 123456   |
+

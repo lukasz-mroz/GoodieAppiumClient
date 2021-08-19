@@ -1,9 +1,10 @@
 ﻿using AppiumClient;
+using GoodieAppiumClient.Pages;
 using OpenQA.Selenium.Appium.Android;
 
 namespace GoodieAppiumClient
 {
-  public class WelcomeScreenPage : AppiumDriver
+  public class WelcomeScreenPage : BasePage
   {
     // Locators
     AndroidElement guestButton => Driver.FindElementById("pl.goodie.uat.debug:id/guestLoginButton");
