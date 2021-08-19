@@ -116,6 +116,9 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I click register on RegistrationPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
+ testRunner.And("I select brands and click Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 12
  testRunner.Then("I should see PermissionLocalizationPage screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

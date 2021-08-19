@@ -2,6 +2,7 @@
 using System.Threading;
 using AppiumClient;
 using GoodieAppiumClient.Pages;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace GoodieAppiumClient.Features
@@ -12,11 +13,14 @@ namespace GoodieAppiumClient.Features
     private readonly WelcomeScreenPage _welcomeScreenPage;
     private readonly RegistrationPage _registrationPage;
     private readonly BrandListPage _brandListPage;
+    private readonly PermissionLocalizationPage _permissionLocalizationPage;
 
-    public REG001(RegistrationPage registrationPage, WelcomeScreenPage welcomeScreenPage)
+    public REG001(RegistrationPage registrationPage, WelcomeScreenPage welcomeScreenPage, BrandListPage brandListPage, PermissionLocalizationPage permissionLocalizationPage)
     {
       _registrationPage = registrationPage;
       _welcomeScreenPage = welcomeScreenPage;
+      _brandListPage = brandListPage;
+      _permissionLocalizationPage = permissionLocalizationPage;
     }
 
 
@@ -40,19 +44,32 @@ namespace GoodieAppiumClient.Features
     [Given(@"I choose Gender on RegistrationPage")]
     public void GivenIChooseGenderOnRegistrationPage()
     {
-      _registrationPage.Login();
+      _registrationPage.ChooseGender();
     }
 
     [When(@"I click register on RegistrationPage")]
     public void WhenIClickRegisterOnRegistrationPage()
     {
-      
+      _registrationPage.Login();
     }
+
+    [When(@"I select brands and click Next button")]
+    public void WhenISelectBrandsAndClickNextButton()
+    {
+      Thread.Sleep(3000);
+      _brandListPage.ClickOnThreeFirstelements();
+      _brandListPage.ClickOnButton();
+    }
+
 
     [Then(@"I should see PermissionLocalizationPage screen")]
     public void ThenIShouldSeePermissionLocalizationPageScreen()
     {
-      Thread.Sleep(60000);
+      Thread.Sleep(3000);
+      Assert.AreEqual(true,_permissionLocalizationPage.textBestOffers.Displayed);
     }
+
+
+
   }
 }
