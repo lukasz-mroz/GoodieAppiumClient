@@ -12,7 +12,7 @@ namespace GoodieAppiumClient
   {
 
     // Locators
-    public AndroidElement registrationByFacebook => Driver.FindElementByXPath("/hierarchy / android.widget.FrameLayout / android.widget.LinearLayout / android.widget.FrameLayout / android.widget.LinearLayout / android.widget.FrameLayout / android.view.ViewGroup / android.widget.FrameLayout / android.widget.FrameLayout / android.view.ViewGroup / android.widget.ScrollView / android.view.ViewGroup / android.widget.FrameLayout[1] / android.widget.TextView");
+    public AndroidElement registrationByFacebook => Driver.FindElementById("pl.goodie.uat.debug:id/registerWithFacebook");
 
     public AndroidElement registrationByGoogle => Driver.FindElementById("pl.goodie.uat.debug:id/registerWithGoogle");
 
