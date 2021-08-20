@@ -21,7 +21,7 @@ namespace AppiumClient
       {
         _localService = new AppiumServiceBuilder()
           .WithAppiumJS(
-            new FileInfo("C:\\Users\\Lukasz\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+            new FileInfo(Global.AppiumJS))
           .UsingAnyFreePort()
           .Build();
 

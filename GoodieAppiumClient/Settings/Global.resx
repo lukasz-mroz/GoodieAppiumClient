@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AppiumJS" xml:space="preserve">
+    <value>C:\\Users\\Lukasz\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js</value>
+  </data>
   <data name="ServerUri" xml:space="preserve">
     <value />
     <comment>http://localhost:4723/wd/hub</comment>

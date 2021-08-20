@@ -61,6 +61,15 @@ namespace GoodieAppiumClient.Settings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to C:\\Users\\Lukasz\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js.
+        /// </summary>
+        internal static string AppiumJS {
+            get {
+                return ResourceManager.GetString("AppiumJS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ServerUri {
