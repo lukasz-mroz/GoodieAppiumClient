@@ -88,7 +88,7 @@ namespace GoodieAppiumClient.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 10.0.
+        ///   Looks up a localized string similar to 11.0.
         /// </summary>
         internal static string platformVersion {
             get {

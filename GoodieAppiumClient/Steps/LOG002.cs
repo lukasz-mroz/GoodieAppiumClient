@@ -29,7 +29,7 @@ namespace GoodieAppiumClient.Features
     [Given(@"I enter on google account on LoginPage")]
     public void GivenIEnterOnGoogleAccountOnLoginPage()
     {
-      _loginPage.LoginUsingGoogle();
+      _loginPage.Login(2);
     }
 
     [When(@"I try to login using Google Account")]

@@ -127,6 +127,6 @@
     <value>Android</value>
   </data>
   <data name="platformVersion" xml:space="preserve">
-    <value>10.0</value>
+    <value>11.0</value>
   </data>
 </root>

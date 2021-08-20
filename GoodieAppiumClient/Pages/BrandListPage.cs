@@ -8,7 +8,7 @@ using OpenQA.Selenium.Appium.Android;
 
 namespace GoodieAppiumClient.Pages
 {
-  public class BrandListPage : BasePage, ILogin
+  public class BrandListPage : BasePage
   {
     public IList<AndroidElement> listOfBrands => Driver.FindElementsById("pl.goodie.uat.debug:id/brandCircle");
 
