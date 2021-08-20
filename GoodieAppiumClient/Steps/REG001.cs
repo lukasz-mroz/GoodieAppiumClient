@@ -67,6 +67,7 @@ namespace GoodieAppiumClient.Features
     {
       Thread.Sleep(3000);
       Assert.AreEqual(true,_permissionLocalizationPage.textBestOffers.Displayed);
+      
     }
 
 

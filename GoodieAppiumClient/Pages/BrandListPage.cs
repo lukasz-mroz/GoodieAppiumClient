@@ -8,7 +8,7 @@ using OpenQA.Selenium.Appium.Android;
 
 namespace GoodieAppiumClient.Pages
 {
-  public class BrandListPage : BasePage
+  public class BrandListPage : BasePage, ILogin
   {
     public IList<AndroidElement> listOfBrands => Driver.FindElementsById("pl.goodie.uat.debug:id/brandCircle");
 
@@ -16,13 +16,13 @@ namespace GoodieAppiumClient.Pages
 
     public void ClickOnThreeFirstelements()
     {
-      var list = listOfBrands.Take(3);
+      var brands = listOfBrands.Take(3);
 
-      foreach (var d in list)
+      foreach (var brand in brands)
       {
         var random = new Random();
-        var dealer = listOfBrands[random.Next(0, 15)];
-        dealer.Click();
+        var element = listOfBrands[random.Next(0, 13)];
+        element.Click();
       }
     }
 

@@ -10,8 +10,6 @@ namespace AppiumClient
 {
   public class AppiumManager
   {
-
-    //private readonly Settings _settings;
     public static AndroidDriver<AndroidElement> Driver { get; set; }
     public static PlatfornEnum Platform { get; set; }
     public static bool IsOnIOS => Platform == PlatfornEnum.IOS;
@@ -33,8 +31,7 @@ namespace AppiumClient
         InitializeAppium();
       }
     }
-
-    public static AndroidDriver<AndroidElement> InitializeAppium()
+    public static void InitializeAppium()
     {
       // capabilities of device
       var driverOption = new AppiumOptions();
@@ -45,9 +42,7 @@ namespace AppiumClient
 
       // assign instance of specific device to Driver
       Driver = new AndroidDriver<AndroidElement>(AppiumServer.ServerUri, driverOption);
-      var driver = Driver;
 
-      return driver;
     }
 
     public static void CloseDriver()
