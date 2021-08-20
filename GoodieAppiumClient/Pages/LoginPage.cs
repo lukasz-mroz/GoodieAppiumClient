@@ -14,7 +14,9 @@ namespace GoodieAppiumClient
 {
   public class LoginPage : BasePage
   {
-    // Locators
+    /// <summary>
+    /// Locators
+    /// </summary>
     AndroidElement loginByFacebook => Driver.FindElementById("pl.goodie.uat.debug:id/loginFacebookBtn");
 
     AndroidElement loginByGoogle => Driver.FindElementById("pl.goodie.uat.debug:id/loginGoogleBtn");
@@ -28,15 +30,18 @@ namespace GoodieAppiumClient
     AndroidElement accountDisplayName => Driver.FindElementById("com.google.android.gms:id/account_display_name");
     IList<AndroidElement> googleAccounts => Driver.FindElementsById("com.google.android.gms:id/account_particle_disc");
 
-
-    public void Login(LoginTypes loginType = LoginTypes.LoginByEmailButton)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="loginType"></param>
+    public void Login(LoginTypesEnum loginType = LoginTypesEnum.LoginByEmailButton)
     {
       switch (loginType)
       {
-        case LoginTypes.LoginByGoogle:
+        case LoginTypesEnum.LoginByGoogle:
           loginByGoogle.Click();
           break;
-        case LoginTypes.LoginByFacebook:
+        case LoginTypesEnum.LoginByFacebook:
           loginByFacebook.Click();
           break;
         default:
@@ -44,7 +49,9 @@ namespace GoodieAppiumClient
           break;
       }
     }
-
+    /// <summary>
+    /// Choose random google account
+    /// </summary>
     public void ChooseRandomAccount()
     {
       var random = new Random();
@@ -52,12 +59,15 @@ namespace GoodieAppiumClient
       d.Click();
     }
 
-  public void LoginByEmail(string login, string password)
+    /// <summary>
+    /// Login by email using credentials from Specflow file
+    /// </summary>
+    /// <param name="login"></param>
+    /// <param name="password"></param>
+    public void LoginByEmail(string login, string password)
     {
       emaiLoginField.SendKeys(login);
       emailPasswordField.SendKeys(password);
     }
-
-   
   }
 }

@@ -30,7 +30,7 @@ namespace GoodieAppiumClient.Features
     [Given(@"I enter on google account on LoginPage")]
     public void GivenIEnterOnGoogleAccountOnLoginPage()
     {
-      _loginPage.Login(LoginTypes.LoginByGoogle);
+      _loginPage.Login(LoginTypesEnum.LoginByGoogle);
     }
 
     [When(@"I try to login using Google Account")]
@@ -42,7 +42,6 @@ namespace GoodieAppiumClient.Features
     [Then(@"I should see next screen")]
     public void ThenIShouldSeeNextScreen()
     {
-
       Assert.AreEqual(true, _permissionLocalizationPage.textBestOffers.Displayed);
       Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(300);
     }

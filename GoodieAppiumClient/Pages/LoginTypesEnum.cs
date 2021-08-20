@@ -1,6 +1,6 @@
 ﻿namespace GoodieAppiumClient.Pages
 {
-  public enum LoginTypes
+  public enum LoginTypesEnum
   {
     LoginByFacebook,
     LoginByGoogle,
