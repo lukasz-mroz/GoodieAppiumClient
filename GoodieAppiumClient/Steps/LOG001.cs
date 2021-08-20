@@ -39,7 +39,7 @@ namespace GoodieAppiumClient.Features
     [When(@"I try to login on LoginPage")]
     public void WhenITryToLogin()
     {
-      _loginPage.LoginTap();
+      _loginPage.Login(3);
     }
 
     [Then(@"I should see PermissionLocalizationPage")]

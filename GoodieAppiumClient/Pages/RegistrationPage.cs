@@ -24,7 +24,7 @@ namespace GoodieAppiumClient
 
     public IList<AndroidElement> genderList => Driver.FindElementsById("pl.goodie.uat.debug:id/optionSelectText");
 
-    public AndroidElement registrationLoginButton => Driver.FindElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.Button");
+    public AndroidElement registrationLoginButton => Driver.FindElementById("pl.goodie.uat.debug:id/registerButton");
 
     public void SumbitRegistrationData(string login, string password, string loginName)
     {
