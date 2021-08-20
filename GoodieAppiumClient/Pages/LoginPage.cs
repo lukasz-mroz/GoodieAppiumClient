@@ -15,7 +15,7 @@ namespace GoodieAppiumClient
   public class LoginPage : BasePage
   {
     // Locators
-    AndroidElement loginByFacebook => Driver.FindElementByXPath("/ hierarchy / android.widget.FrameLayout / android.widget.LinearLayout / android.widget.FrameLayout / android.widget.LinearLayout / android.widget.FrameLayout / android.view.ViewGroup / android.widget.FrameLayout / android.widget.FrameLayout / android.view.ViewGroup / android.widget.ScrollView / android.view.ViewGroup / android.widget.FrameLayout[1] / android.widget.Button");
+    AndroidElement loginByFacebook => Driver.FindElementById("pl.goodie.uat.debug:id/loginFacebookBtn");
 
     AndroidElement loginByGoogle => Driver.FindElementById("pl.goodie.uat.debug:id/loginGoogleBtn");
 

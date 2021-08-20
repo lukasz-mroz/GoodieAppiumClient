@@ -7,17 +7,15 @@ namespace GoodieAppiumClient
   public class PermissionLocalizationPage : BasePage
   {
     // Page locators
-    public AndroidElement shareLocalizationButton => Driver.FindElementByXPath(
-      "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.Button");
+    public AndroidElement shareLocalizationButton => Driver.FindElementById("pl.goodie.uat.debug:id/shareLocalizationButton");
 
-    public AndroidElement skipButton => Driver.FindElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.TextView[3]");
+    public AndroidElement skipButton => Driver.FindElementById("pl.goodie.uat.debug:id/skipButton");
 
-    public AndroidElement textBestOffers => Driver.FindElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.TextView[1]");
+    public AndroidElement textBestOffers => Driver.FindElementById("pl.goodie.uat.debug:id/askPermissionLocalizationTitle");
 
 
     // Pop-up locators
-    private AndroidElement permissiongMessage => Driver.FindElementByXPath(
-      "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView");
+    private AndroidElement permissiongMessage => Driver.FindElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView");
 
 
 
