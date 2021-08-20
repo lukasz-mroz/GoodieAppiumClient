@@ -29,17 +29,17 @@ namespace GoodieAppiumClient
     IList<AndroidElement> googleAccounts => Driver.FindElementsById("com.google.android.gms:id/account_particle_disc");
 
 
-    public void Login(int number)
+    public void Login(LoginTypes loginType = LoginTypes.LoginByEmailButton)
     {
-      switch (number)
+      switch (loginType)
       {
-        case 1:
-          loginByFacebook.Click();
-          break;
-        case 2:
+        case LoginTypes.LoginByGoogle:
           loginByGoogle.Click();
           break;
-        case 3:
+        case LoginTypes.LoginByFacebook:
+          loginByFacebook.Click();
+          break;
+        default:
           loginByEmailButton.Click();
           break;
       }

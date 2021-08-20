@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using AppiumClient;
+using GoodieAppiumClient.Pages;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -39,7 +40,7 @@ namespace GoodieAppiumClient.Features
     [When(@"I try to login on LoginPage")]
     public void WhenITryToLogin()
     {
-      _loginPage.Login(3);
+      _loginPage.Login();
     }
 
     [Then(@"I should see PermissionLocalizationPage")]

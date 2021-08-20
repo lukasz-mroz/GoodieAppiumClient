@@ -1,5 +1,6 @@
 ﻿using System;
 using AppiumClient;
+using GoodieAppiumClient.Pages;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -29,7 +30,7 @@ namespace GoodieAppiumClient.Features
     [Given(@"I enter on google account on LoginPage")]
     public void GivenIEnterOnGoogleAccountOnLoginPage()
     {
-      _loginPage.Login(2);
+      _loginPage.Login(LoginTypes.LoginByGoogle);
     }
 
     [When(@"I try to login using Google Account")]
