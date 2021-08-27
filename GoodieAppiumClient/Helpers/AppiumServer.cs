@@ -11,13 +11,13 @@ namespace AppiumClient
   {
     private static AppiumLocalService _localService;
     public static event DataReceivedEventHandler OutputDataReceived;
-    public static Uri ServerUri { get; set; }
+    public static Uri ServerUri { get; private set; }
 
     public static bool IsServerRunning => ServerUri != null;
 
     public static void StartServerIfShouldRunLocally()
     {
-      if (string.IsNullOrEmpty(Global.ServerUri))
+      if (String.IsNullOrEmpty(Global.ServerUri))
       {
         _localService = new AppiumServiceBuilder()
           .WithAppiumJS(

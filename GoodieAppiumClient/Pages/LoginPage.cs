@@ -29,6 +29,7 @@ namespace GoodieAppiumClient
 
     AndroidElement accountDisplayName => Driver.FindElementById("com.google.android.gms:id/account_display_name");
     IList<AndroidElement> googleAccounts => Driver.FindElementsById("com.google.android.gms:id/account_particle_disc");
+    public AndroidElement snackBar => Driver.FindElementById("pl.goodie.uat.debug:id/snackbar_text");
 
     /// <summary>
     /// 

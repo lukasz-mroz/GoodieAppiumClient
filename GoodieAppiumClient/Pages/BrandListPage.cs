@@ -10,6 +10,8 @@ namespace GoodieAppiumClient.Pages
 {
   public class BrandListPage : BasePage
   {
+    public AndroidElement searchField => Driver.FindElementById("pl.goodie.uat.debug:id/searchButton");
+    public AndroidElement editText => Driver.FindElementById("pl.goodie.uat.debug:id/editText");
     public IList<AndroidElement> listOfBrands => Driver.FindElementsById("pl.goodie.uat.debug:id/brandCircle");
 
     public AndroidElement nextButton => Driver.FindElementById("pl.goodie.uat.debug:id/nextButton");
@@ -29,6 +31,13 @@ namespace GoodieAppiumClient.Pages
     public void ClickOnButton()
     {
       nextButton.Click();
+    }
+
+    public void SearchBrandOnSearchField(string brandName)
+    {
+      searchField.Click();
+      editText.SendKeys(brandName);
+
     }
   }
 }
