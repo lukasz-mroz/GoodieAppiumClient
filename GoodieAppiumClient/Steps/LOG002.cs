@@ -38,12 +38,5 @@ namespace GoodieAppiumClient.Features
     {
       _loginPage.ChooseRandomAccount();
     }
-
-    [Then(@"I should see next screen")]
-    public void ThenIShouldSeeNextScreen()
-    {
-      Assert.AreEqual(true, _permissionLocalizationPage.textBestOffers.Displayed);
-      Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(300);
-    }
   }
 }
