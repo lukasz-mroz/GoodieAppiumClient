@@ -21,7 +21,6 @@ namespace GoodieAppiumClient.Features
       _permissionLocalizationPage = permissionLocalizationPage;
     }
 
-
     [Given(@"I click login on WelcomeScreen")]
     public void GivenIClickLogin()
     {
@@ -37,7 +36,7 @@ namespace GoodieAppiumClient.Features
 
     }
 
-    [When(@"I try to login on LoginPage")]
+    [When(@"I try to login on LoginPage screen")]
     public void WhenITryToLogin()
     {
       _loginPage.Login();

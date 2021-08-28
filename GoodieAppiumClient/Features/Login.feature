@@ -1,10 +1,13 @@
-﻿Feature: Login
+﻿@smoke
+Feature: Login
+
+Background: 
+Given I click login on WelcomeScreen
 
 @smoke
-Scenario: Login with email starting from welcome screen
-	Given I click login on WelcomeScreen
-	And I enter on LoginPage <Login> and <Password>
-	When I try to login on LoginPage
+Scenario Outline: Login with email starting from welcome screen
+	Given I enter on LoginPage <Login> and <Password>
+	When I try to login on LoginPage screen
 	Then I should see PermissionLocalizationPage
 
 	Examples:
@@ -13,10 +16,10 @@ Scenario: Login with email starting from welcome screen
 		| dziki@jmail.ovh | 123456   |
 
 @smoke
-Scenario: Login with email using incorrect data
-	Given I click login on Welcome Screen
-	And I enter on LoginPage <WrongLogin> and <WrongPassword>
-	When I try to login on LoginPage
+@important
+Scenario Outline: Login with email using incorrect data
+	Given I enter on LoginPage <WrongLogin> and <WrongPassword>
+	When I try to login on LoginPage screen
 	Then I should see tooltip
 
 	Examples:
@@ -25,7 +28,6 @@ Scenario: Login with email using incorrect data
 
 @smoke
 Scenario: Login with SM account starting from welcome screen
-	Given I click login on Welcome Screen
-	And I enter on google account on LoginPage
+	Given I enter on google account on LoginPage
 	When I try to login using Google Account
 	Then I should see PermissionLocalizationPage

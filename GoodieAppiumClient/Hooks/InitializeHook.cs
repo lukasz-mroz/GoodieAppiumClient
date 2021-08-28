@@ -12,12 +12,6 @@ namespace GoodieAppiumClient.Hooks
   [Binding]
   class InitializeHook
   {
-    private readonly ScenarioContext _scenarioContext;
-
-    public InitializeHook(ScenarioContext scenarioContext)
-    {
-      _scenarioContext = scenarioContext;
-    }
 
     [BeforeTestRun]
     public static void BeforeTestRun()
@@ -41,7 +35,6 @@ namespace GoodieAppiumClient.Hooks
     [AfterScenario]
     public void RunAfterScenario()
     {
-
     }
 
   }

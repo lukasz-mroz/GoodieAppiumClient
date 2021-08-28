@@ -20,12 +20,6 @@ namespace GoodieAppiumClient.Features
       _permissionLocalizationPage = permissionLocalizationPage;
     }
 
-    [Given(@"I click login on Welcome Screen")]
-    public void GivenIClickLoginOnWelcomeScreen()
-    {
-      Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-      _welcomeScreen.LoginIn();
-    }
 
     [Given(@"I enter on google account on LoginPage")]
     public void GivenIEnterOnGoogleAccountOnLoginPage()

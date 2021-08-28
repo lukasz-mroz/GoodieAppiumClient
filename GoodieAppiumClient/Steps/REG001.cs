@@ -54,9 +54,10 @@ namespace GoodieAppiumClient.Features
     }
 
     [When(@"I select brands and click Next button")]
+    [When("I selected some brands and click Next button")]
     public void WhenISelectBrandsAndClickNextButton()
     {
-      Thread.Sleep(3000);
+      Thread.Sleep(4000);
       _brandListPage.ClickOnThreeFirstelements();
       _brandListPage.ClickOnButton();
     }
