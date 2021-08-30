@@ -50,10 +50,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Settings\AndroidSettings.Designer.cs">
+    <Compile Update="Settings\Android.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>AndroidSettings.resx</DependentUpon>
+      <DependentUpon>Android.resx</DependentUpon>
     </Compile>
     <Compile Update="Settings\Global.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -63,9 +63,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Settings\AndroidSettings.resx">
+    <EmbeddedResource Update="Settings\Android.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AndroidSettings.Designer.cs</LastGenOutput>
+      <LastGenOutput>Android.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Settings\Global.resx">
       <Generator>ResXFileCodeGenerator</Generator>

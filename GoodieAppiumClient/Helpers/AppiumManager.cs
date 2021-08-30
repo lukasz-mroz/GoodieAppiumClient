@@ -35,10 +35,10 @@ namespace AppiumClient
     {
       // capabilities of device
       var driverOption = new AppiumOptions();
-      driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformName, AndroidSettings.platformName);
-      driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, AndroidSettings.platformVersion);
-      driverOption.AddAdditionalCapability(MobileCapabilityType.DeviceName, AndroidSettings.deviceName);
-      driverOption.AddAdditionalCapability(MobileCapabilityType.App, AndroidSettings.app);
+      driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformName, Android.platformName);
+      driverOption.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, Android.platformVersion);
+      driverOption.AddAdditionalCapability(MobileCapabilityType.DeviceName, Android.deviceName);
+      driverOption.AddAdditionalCapability(MobileCapabilityType.App, Android.app);
 
       // assign instance of specific device to Driver
       Driver = new AndroidDriver<AndroidElement>(AppiumServer.ServerUri, driverOption);

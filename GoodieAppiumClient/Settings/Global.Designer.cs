@@ -70,7 +70,7 @@ namespace GoodieAppiumClient.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://localhost:4723/wd/hub.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ServerUri {
             get {
