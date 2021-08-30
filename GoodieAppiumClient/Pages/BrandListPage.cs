@@ -10,10 +10,10 @@ namespace GoodieAppiumClient.Pages
 {
   public class BrandListPage : BasePage
   {
+    // Locators
     public AndroidElement searchField => Driver.FindElementById("pl.goodie.uat.debug:id/searchButton");
     public AndroidElement editText => Driver.FindElementById("pl.goodie.uat.debug:id/editText");
     public IList<AndroidElement> listOfBrands => Driver.FindElementsById("pl.goodie.uat.debug:id/brandCircle");
-
     public AndroidElement nextButton => Driver.FindElementById("pl.goodie.uat.debug:id/nextButton");
 
     public void ClickOnThreeFirstelements()

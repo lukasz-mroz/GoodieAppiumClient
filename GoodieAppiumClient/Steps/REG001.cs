@@ -3,6 +3,7 @@ using System.Threading;
 using AppiumClient;
 using GoodieAppiumClient.Pages;
 using NUnit.Framework;
+using Shouldly;
 using TechTalk.SpecFlow;
 
 namespace GoodieAppiumClient.Features
@@ -67,8 +68,7 @@ namespace GoodieAppiumClient.Features
     public void ThenIShouldSeePermissionLocalizationPageScreen()
     {
       Thread.Sleep(3000);
-      Assert.AreEqual(true,_permissionLocalizationPage.textBestOffers.Displayed);
-      
+      _permissionLocalizationPage.textBestOffers.Displayed.ShouldBe(true);
     }
 
 

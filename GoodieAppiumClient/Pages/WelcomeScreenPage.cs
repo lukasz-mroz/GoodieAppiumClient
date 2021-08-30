@@ -15,7 +15,6 @@ namespace GoodieAppiumClient
     public void EnterAsAGuest()
     {
       guestButton.Click();
-
     }
 
     public void Registrate()

@@ -3,6 +3,7 @@ using System.Threading;
 using AppiumClient;
 using GoodieAppiumClient.Pages;
 using NUnit.Framework;
+using Shouldly;
 using TechTalk.SpecFlow;
 
 namespace GoodieAppiumClient.Features
@@ -46,8 +47,7 @@ namespace GoodieAppiumClient.Features
     public void ThenIShouldSeeWelcomeScreen()
     {
       Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-      var visibleButton = _permissionLocalizationPage.skipButton.Displayed;
-      Assert.AreEqual(true, visibleButton);
+      _permissionLocalizationPage.skipButton.Displayed.ShouldBe(true);
     }
   }
 }

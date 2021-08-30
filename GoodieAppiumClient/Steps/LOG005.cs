@@ -1,6 +1,7 @@
 ﻿using System;
 using AppiumClient;
 using NUnit.Framework;
+using Shouldly;
 using TechTalk.SpecFlow;
 
 namespace GoodieAppiumClient.Features
@@ -17,7 +18,7 @@ namespace GoodieAppiumClient.Features
         [Then(@"I should see tooltip")]
         public void ThenIShouldSeeTooltip()
         {
-          Assert.AreEqual(true, _loginPage.snackBar.Displayed);
+          _loginPage.snackBar.Displayed.ShouldBe(true);
         }
     }
 }
