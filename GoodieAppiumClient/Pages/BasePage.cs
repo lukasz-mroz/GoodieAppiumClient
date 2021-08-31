@@ -10,6 +10,5 @@ namespace GoodieAppiumClient.Pages
   public class BasePage
   { 
     protected AppiumDriver<AndroidElement> Driver => AppiumManager.Driver;
-    protected PlatfornEnum Platform => AppiumManager.IsOnIOS ? PlatfornEnum.IOS : PlatfornEnum.Android;
   }
 }

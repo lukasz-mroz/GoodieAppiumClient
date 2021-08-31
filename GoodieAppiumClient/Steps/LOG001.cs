@@ -34,7 +34,6 @@ namespace GoodieAppiumClient.Features
     {
       Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
       _loginPage.LoginByEmail(p0,p1);
-
     }
 
     [When(@"I try to login on LoginPage screen")]

@@ -18,13 +18,11 @@ namespace GoodieAppiumClient.Pages
 
     public void ClickOnThreeFirstelements()
     {
-      var brands = listOfBrands.Take(3);
+      var brands = listOfBrands.Where(b=>b.Displayed).Take(3);
 
       foreach (var brand in brands)
       {
-        var random = new Random();
-        var element = listOfBrands[random.Next(0, 13)];
-        element.Click();
+        brand.Click();
       }
     }
 

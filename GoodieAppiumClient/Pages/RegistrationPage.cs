@@ -27,6 +27,7 @@ namespace GoodieAppiumClient
       registrationEmailField.SendKeys(login);
       registrationPasswordField.SendKeys(password);
       registrationLoginField.SendKeys(loginName);
+      
     }
 
     public void ChooseGender()

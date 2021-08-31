@@ -11,9 +11,7 @@ namespace AppiumClient
   public class AppiumManager
   {
     public static AndroidDriver<AndroidElement> Driver { get; set; }
-    public static PlatfornEnum Platform { get; set; }
-    public static bool IsOnIOS => Platform == PlatfornEnum.IOS;
-    public static bool IsOnAndroid => Platform == PlatfornEnum.Android;
+   
 
     public static void ResetApp()
     {
