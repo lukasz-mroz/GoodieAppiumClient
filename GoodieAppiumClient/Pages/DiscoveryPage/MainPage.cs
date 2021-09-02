@@ -6,13 +6,6 @@ namespace GoodieAppiumClient.Pages
 {
   public class MainPage : AppiumManager
   {
-    private readonly YourBrandsWidget _yourBrandsWidget;
-
-    public MainPage(YourBrandsWidget yourBrandsWidget)
-    {
-      _yourBrandsWidget = yourBrandsWidget;
-    }
-
     public AndroidElement Discovery => Driver.FindElementsById("pl.goodie.uat.debug:id/bottomBarItemTitle").ElementAt(0);
     public AndroidElement YourGoodie => Driver.FindElementsById("pl.goodie.uat.debug:id/bottomBarItemTitle").ElementAt(1);
     public AndroidElement Profile => Driver.FindElementsById("pl.goodie.uat.debug:id/bottomBarItemTitle").ElementAt(2);
