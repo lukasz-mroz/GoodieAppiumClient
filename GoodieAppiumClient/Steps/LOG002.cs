@@ -13,7 +13,7 @@ namespace GoodieAppiumClient.Features
     private readonly LoginPage _loginPage;
     private readonly PermissionLocalizationPage _permissionLocalizationPage;
 
-    public LOG002(WelcomeScreenPage welcomeScreen, LoginPage loginPage, PermissionLocalizationPage permissionLocalizationPage)
+    public LOG002(WelcomeScreenPage welcomeScreen, LoginPage loginPage, PermissionLocalizationPage permissionLocalizationPage, ScenarioContext scenarioContext)
     {
       _welcomeScreen = welcomeScreen;
       _loginPage = loginPage;

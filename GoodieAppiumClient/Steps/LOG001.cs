@@ -14,12 +14,14 @@ namespace GoodieAppiumClient.Features
     private readonly WelcomeScreenPage _welcomeScreen;
     private readonly LoginPage _loginPage;
     private readonly PermissionLocalizationPage _permissionLocalizationPage;
+    private readonly ScenarioContext _scenarioContext;
 
-    public LOG001(WelcomeScreenPage welcomeScreen, LoginPage loginPage, PermissionLocalizationPage permissionLocalizationPage)
+    public LOG001(WelcomeScreenPage welcomeScreen, LoginPage loginPage, PermissionLocalizationPage permissionLocalizationPage, FeatureContext featureContext, ScenarioContext scenarioContext)
     {
-      _welcomeScreen = welcomeScreen;
-      _loginPage = loginPage;
-      _permissionLocalizationPage = permissionLocalizationPage;
+      _welcomeScreen = welcomeScreen ?? throw new ArgumentNullException(nameof(welcomeScreen));
+      _loginPage = loginPage ?? throw new ArgumentNullException(nameof(loginPage));
+      _permissionLocalizationPage = permissionLocalizationPage ?? throw new ArgumentNullException(nameof(permissionLocalizationPage));
+      _scenarioContext = scenarioContext ?? throw new ArgumentNullException(nameof(scenarioContext));
     }
 
     [Given(@"I click login on WelcomeScreen")]

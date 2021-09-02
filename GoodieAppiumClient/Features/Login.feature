@@ -38,3 +38,16 @@ Scenario: Login using email using no data to login and password
 	Given I do not enter any Login and Password
 	When I try to login on LoginPage screen
 	Then I should see validation error
+
+Scenario Outline: User wants to log in and log out
+	Given I enter on LoginPage <Login> and <Password>
+	When I try to login on LoginPage screen
+	And I skip permissionLocalizationPage
+	And I go to Profile
+	And I scroll down until the end of the screen
+	And I click log out
+	Then I should see WelcomeScreen
+
+	Examples: 
+	| Login        | Password |
+	| all@moakt.cc | 123456   |

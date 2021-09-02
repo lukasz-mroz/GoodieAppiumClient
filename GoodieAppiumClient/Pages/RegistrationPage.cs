@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AppiumClient;
 using GoodieAppiumClient.Pages;
+using GoodieAppiumClient.Pages.ExtensionMethods;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Interactions;
 
@@ -27,7 +28,6 @@ namespace GoodieAppiumClient
       registrationEmailField.SendKeys(login);
       registrationPasswordField.SendKeys(password);
       registrationLoginField.SendKeys(loginName);
-      
     }
 
     public void ChooseGender()

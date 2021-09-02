@@ -13,9 +13,5 @@ namespace GoodieAppiumClient
     {
       searchField.SendKeys(text);
     }
-
-
-
-
   }
 }

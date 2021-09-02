@@ -24,7 +24,6 @@ namespace GoodieAppiumClient.Features
       _permissionLocalizationPage = permissionLocalizationPage;
     }
 
-
     [Given(@"I click registration on WelcomeScreen")]
     public void GivenIClickRegistrationOnWelcomeScreen()
     {
