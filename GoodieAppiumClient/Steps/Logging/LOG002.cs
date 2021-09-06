@@ -15,9 +15,9 @@ namespace GoodieAppiumClient.Features
 
     public LOG002(WelcomeScreenPage welcomeScreen, LoginPage loginPage, PermissionLocalizationPage permissionLocalizationPage, ScenarioContext scenarioContext)
     {
-      _welcomeScreen = welcomeScreen;
-      _loginPage = loginPage;
-      _permissionLocalizationPage = permissionLocalizationPage;
+      _welcomeScreen = welcomeScreen ?? throw new ArgumentNullException(nameof(welcomeScreen));
+      _loginPage = loginPage ?? throw new ArgumentNullException(nameof(loginPage));
+      _permissionLocalizationPage = permissionLocalizationPage ?? throw new ArgumentNullException(nameof(permissionLocalizationPage));
     }
 
 

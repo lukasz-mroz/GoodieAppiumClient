@@ -7,14 +7,6 @@ namespace GoodieAppiumClient.Pages
   {
     public AndroidElement content => Driver.FindElementById("pl.goodie.uat.debug:id/brandCircleImageView");
 
-    public bool CheckIfThereIsContent()
-    {
-      if (content.Displayed)
-        return true;
-      {
-        return false;
-      }
-    }
 
   }
 }

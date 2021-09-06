@@ -12,7 +12,7 @@ namespace GoodieAppiumClient.Features
       private readonly LoginPage _loginPage;
       public LOG005(LoginPage loginPage)
       {
-        _loginPage = loginPage;
+        _loginPage = loginPage ?? throw new ArgumentNullException(nameof(loginPage));
       }
       
         [Then(@"I should see tooltip")]

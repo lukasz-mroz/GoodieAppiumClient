@@ -18,7 +18,7 @@ namespace GoodieAppiumClient.Features
         [Then(@"I should see the content of the app")]
         public void ThenIShouldSeeTheContentOfTheApp()
         {
-          _yourBrandsWidget.CheckIfThereIsContent().ShouldBe(true);
+          _yourBrandsWidget.content.Displayed.ShouldBe(true);
         }
     }
 }
