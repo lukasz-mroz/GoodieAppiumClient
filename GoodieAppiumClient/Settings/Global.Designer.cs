@@ -70,7 +70,7 @@ namespace GoodieAppiumClient.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\Lukasz\source\repos\GoodieAppiumClient\GoodieAppiumClient\Screenshots.
+        ///   Looks up a localized string similar to C:\Users\Lukasz\source\repos\GoodieAppiumClient\GoodieAppiumClient\Screenshots\Screen_.
         /// </summary>
         internal static string ScreenshotsFolder {
             get {

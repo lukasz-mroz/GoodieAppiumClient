@@ -29,17 +29,7 @@ namespace GoodieAppiumClient.Features
     [Then(@"I should see validation error")]
     public void ThenIShouldSeeValidationError()
     {
-      var screenshot = Driver.GetScreenshot();
-      
-      try
-      {
-        screenshot.SaveAsFile(Global.ScreenshotsFolder + "asd.png");
-        _loginPage.errorValidation.Text.ShouldBe(TextConsts.validationTextOnEmailLogin);
-      }
-      catch (AssertionFailedException e)
-      {
-        
-      }
+      _loginPage.errorValidation.Text.ShouldBe(TextConsts.validationTextOnEmailLogin);
     }
   }
 }

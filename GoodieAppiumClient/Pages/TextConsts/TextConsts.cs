@@ -7,7 +7,7 @@ namespace GoodieAppiumClient.Pages
 {
   public static class TextConsts
   {
-    public const string validationTextOnEmailLogin = "To pole jest wymagana";
+    public const string validationTextOnEmailLogin = "To pole jest wymagane";
     public const string yourBrandsWidgetName = "Twoje marki";
   }
 }
