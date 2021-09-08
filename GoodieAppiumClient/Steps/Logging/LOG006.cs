@@ -1,7 +1,11 @@
 ﻿using System;
+using System.IO;
 using AppiumClient;
+using FluentAssertions.Execution;
 using GoodieAppiumClient.Pages;
+using GoodieAppiumClient.Settings;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using Shouldly;
 using TechTalk.SpecFlow;
 
@@ -25,7 +29,17 @@ namespace GoodieAppiumClient.Features
     [Then(@"I should see validation error")]
     public void ThenIShouldSeeValidationError()
     {
-      _loginPage.errorValidation.Text.ShouldBe(TextConsts.validationTextOnEmailLogin);
+      var screenshot = Driver.GetScreenshot();
+      
+      try
+      {
+        screenshot.SaveAsFile(Global.ScreenshotsFolder + "asd.png");
+        _loginPage.errorValidation.Text.ShouldBe(TextConsts.validationTextOnEmailLogin);
+      }
+      catch (AssertionFailedException e)
+      {
+        
+      }
     }
   }
 }

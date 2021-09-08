@@ -70,6 +70,15 @@ namespace GoodieAppiumClient.Settings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to C:\Users\Lukasz\source\repos\GoodieAppiumClient\GoodieAppiumClient\Screenshots.
+        /// </summary>
+        internal static string ScreenshotsFolder {
+            get {
+                return ResourceManager.GetString("ScreenshotsFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ServerUri {
