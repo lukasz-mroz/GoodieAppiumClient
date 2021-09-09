@@ -32,14 +32,14 @@ namespace GoodieAppiumClient
     /// 
     /// </summary>
     /// <param name="loginType"></param>
-    public void Login(LoginTypesEnum loginType = LoginTypesEnum.LoginByEmailButton)
+    public void Login(ProviderEnum loginType = ProviderEnum.Email)
     {
       switch (loginType)
       {
-        case LoginTypesEnum.LoginByGoogle:
+        case ProviderEnum.Google:
           loginByGoogle.Click();
           break;
-        case LoginTypesEnum.LoginByFacebook:
+        case ProviderEnum.Facebook:
           loginByFacebook.Click();
           break;
         default:

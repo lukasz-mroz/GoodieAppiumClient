@@ -24,7 +24,7 @@ namespace GoodieAppiumClient.Features
     [Given(@"I enter on google account on LoginPage")]
     public void GivenIEnterOnGoogleAccountOnLoginPage()
     {
-      _loginPage.Login(LoginTypesEnum.LoginByGoogle);
+      _loginPage.Login(ProviderEnum.Google);
     }
 
     [When(@"I try to login using Google Account")]

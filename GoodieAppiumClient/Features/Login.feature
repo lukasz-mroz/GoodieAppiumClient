@@ -5,7 +5,7 @@ Background:
 	Given I click login on WelcomeScreen
 
 @smoke
-Scenario Outline: Login with email starting from welcome screen
+Scenario Outline: Standard login
 	Given I enter on LoginPage <Login> and <Password>
 	When I try to login on LoginPage screen
 	Then I should see PermissionLocalizationPage
@@ -27,7 +27,7 @@ Scenario Outline: Login with email using incorrect data
 		| asdsds@moakt.cc | 12345677      |
 
 @smoke
-Scenario: Login with SM account starting from welcome screen
+Scenario: Google login
 	Given I enter on google account on LoginPage
 	When I try to login using Google Account
 	Then I should see PermissionLocalizationPage
@@ -39,7 +39,7 @@ Scenario: Login using email using no data to login and password
 	When I try to login on LoginPage screen
 	Then I should see validation error
 
-Scenario Outline: User wants to log in and log out
+Scenario Outline: Log in and log out
 	Given I enter on LoginPage <Login> and <Password>
 	When I try to login on LoginPage screen
 	And I skip permissionLocalizationPage
@@ -50,4 +50,8 @@ Scenario Outline: User wants to log in and log out
 
 	Examples: 
 	| Login        | Password |
-	| all@moakt.cc | 123456   |
+	| all@moakt.cc | 123456   | 
+
+Scenario Outline: Facebook login
+Given I click Zaloguj się z Facebook
+Then I should see PermissionLocalizationPage

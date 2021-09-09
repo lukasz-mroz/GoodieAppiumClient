@@ -15,9 +15,5 @@ namespace GoodieAppiumClient
     {
       skipButton.Click();
     }
-    public void Login()
-    {
-      throw new System.NotImplementedException();
-    }
   }
 }

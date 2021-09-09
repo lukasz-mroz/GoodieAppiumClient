@@ -41,6 +41,22 @@ namespace GoodieAppiumClient
     {
       registrationLoginButton.Click();
     }
-  }
 
+    public void Registrate(ProviderEnum registrationType)
+    {
+      switch (registrationType)
+      {
+        case ProviderEnum.Google:
+          registrationByGoogle.Click();
+          break;
+        case ProviderEnum.Facebook:
+          registrationByFacebook.Click();
+          break;
+        default:
+          registrationLoginField.Click();
+          break;
+      }
+    }
+  }
 }
+
