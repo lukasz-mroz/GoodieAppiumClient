@@ -75,12 +75,12 @@ namespace GoodieAppiumClient.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check if all widgets are displayed")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("smoke")]
         [NUnit.Framework.TestCaseAttribute("all@moakt.cc", "123456", null)]
         public virtual void CheckIfAllWidgetsAreDisplayed(string login, string password, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "smoke"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

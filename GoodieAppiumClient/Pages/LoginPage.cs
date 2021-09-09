@@ -53,9 +53,14 @@ namespace GoodieAppiumClient
     /// </summary>
     public void ChooseRandomAccount()
     {
-      var random = new Random();
-      var d = googleAccounts[random.Next(0, 3)];
-      d.Click();
+
+      var googleaccounts = googleAccounts.Where(b => b.Displayed);
+
+      foreach (var account in googleaccounts)
+      {
+        account.Click();
+      }
+      
     }
 
     /// <summary>
@@ -69,10 +74,6 @@ namespace GoodieAppiumClient
       emailPasswordField.SendKeys(password);
     }
 
-    public void VerifyEmailLogin(bool text)
-    {
-   
-    }
 
   }
 

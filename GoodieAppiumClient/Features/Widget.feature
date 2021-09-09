@@ -1,7 +1,7 @@
 ﻿Feature: Widgets
 	Simple calculator for adding two numbers
 
-@mytag
+@smoke
 Scenario Outline: Check if all widgets are displayed
 	Given I click login on WelcomeScreen
 	And I enter on LoginPage <Login> and <Password>
