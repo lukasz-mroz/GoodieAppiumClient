@@ -11,7 +11,7 @@ namespace AppiumClient
   public class AppiumManager
   {
     public static AndroidDriver<AndroidElement> Driver { get; set; }
-   
+
 
     public static void ResetApp()
     {

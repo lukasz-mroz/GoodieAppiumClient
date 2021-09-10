@@ -28,7 +28,7 @@ namespace GoodieAppiumClient.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "SpecFlowFeature1.feature"
+#line 1 "RegistrationUsingProviders.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
@@ -76,7 +76,7 @@ namespace GoodieAppiumClient.Features
         public virtual void FeatureBackground()
         {
 #line 4
- #line hidden
+#line hidden
 #line 5
  testRunner.Given("I delete an account before I create it.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -114,13 +114,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 4
- this.FeatureBackground();
+this.FeatureBackground();
 #line hidden
 #line 10
-testRunner.Given("I click on Zarejestruj się z Faceboook", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I click on Zarejestruj się z Faceboook", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 11
-testRunner.Then("I should see PermissionLocalizationPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see PermissionLocalizationPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -158,16 +158,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 4
- this.FeatureBackground();
+this.FeatureBackground();
 #line hidden
 #line 16
-testRunner.Given("I click on Zarejestruj się z Google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I click on Zarejestruj się z Google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 17
-testRunner.When("I try to register using Google Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I try to register using Google Account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 18
-testRunner.Then("I should see PermissionLocalizationPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see PermissionLocalizationPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

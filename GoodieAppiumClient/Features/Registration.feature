@@ -1,7 +1,7 @@
 ﻿Feature: Registartion
 
-Background: 
-Given I click registration on WelcomeScreen
+Background:
+	Given I click registration on WelcomeScreen
 
 @smoke
 @positivetest
@@ -11,4 +11,3 @@ Scenario: Standard Registration
 	When I click register on RegistrationPage
 	And I select brands and click Next button
 	Then I should see PermissionLocalizationPage screen
-

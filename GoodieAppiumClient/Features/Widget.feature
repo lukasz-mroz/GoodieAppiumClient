@@ -10,5 +10,5 @@ Scenario Outline: Check if all widgets are displayed
 	Then I should see the content of the app
 
 	Examples:
-	| Login        | Password |
-	| all@moakt.cc | 123456   |
+		| Login        | Password |
+		| all@moakt.cc | 123456   |

@@ -48,10 +48,10 @@ Scenario Outline: Log in and log out
 	And I click log out
 	Then I should see WelcomeScreen
 
-	Examples: 
-	| Login        | Password |
-	| all@moakt.cc | 123456   | 
+	Examples:
+		| Login        | Password |
+		| all@moakt.cc | 123456   |
 
 Scenario Outline: Facebook login
-Given I click Zaloguj się z Facebook
-Then I should see PermissionLocalizationPage
+	Given I click Zaloguj się z Facebook
+	Then I should see PermissionLocalizationPage

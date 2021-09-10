@@ -78,7 +78,7 @@ namespace GoodieAppiumClient.Features
 #line 3
 #line hidden
 #line 4
-testRunner.Given("I click registration on WelcomeScreen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I click registration on WelcomeScreen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
