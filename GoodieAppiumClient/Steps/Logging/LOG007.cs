@@ -36,14 +36,15 @@ namespace GoodieAppiumClient.Features
     public void WhenIScrollDownUntilTheEndOfTheScreen()
     {
       TouchAction action = new TouchAction(Driver);
-      action.Press(378, 1909);
-      action.MoveTo(338, 177);
+      action.Press(371, 1690);
+      action.MoveTo(359, 463);
       action.Release();
       action.Perform();
-      action.Press(600, 1900);
-      action.MoveTo(600, 1500);
+      action.Press(531, 858);
+      action.MoveTo(564, 122);
       action.Release();
       action.Perform();
+      
     }
 
     [When(@"I click log out")]
