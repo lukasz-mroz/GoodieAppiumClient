@@ -70,6 +70,15 @@ namespace GoodieAppiumClient.Settings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Server=LAPTOP-C24L3KKK\SQLEXPRESS;Database=WarcraftGame;Trusted_Connection=True;.
+        /// </summary>
+        internal static string ConnectionString {
+            get {
+                return ResourceManager.GetString("ConnectionString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to C:\Users\Lukasz\source\repos\GoodieAppiumClient\GoodieAppiumClient\Screenshots\Screen_.
         /// </summary>
         internal static string ScreenshotsFolder {

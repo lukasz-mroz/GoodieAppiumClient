@@ -120,6 +120,9 @@
   <data name="AppiumJS" xml:space="preserve">
     <value>C:\\Users\\Lukasz\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js</value>
   </data>
+  <data name="ConnectionString" xml:space="preserve">
+    <value>Server=LAPTOP-C24L3KKK\SQLEXPRESS;Database=WarcraftGame;Trusted_Connection=True;</value>
+  </data>
   <data name="ScreenshotsFolder" xml:space="preserve">
     <value>C:\Users\Lukasz\source\repos\GoodieAppiumClient\GoodieAppiumClient\Screenshots\Screen_</value>
   </data>

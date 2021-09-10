@@ -12,15 +12,3 @@ Scenario: Standard Registration
 	And I select brands and click Next button
 	Then I should see PermissionLocalizationPage screen
 
-@smoke
-@positivetest
-Scenario: Facebook Registration
-Given I click on Zarejestruj się z Faceboook
-Then I should see PermissionLocalizationPage
-
-@smoke
-@positivetest
-Scenario: Google Registration
-Given I click on Zarejestruj się z Google
-When I try to register using Google Account
-Then I should see PermissionLocalizationPage
