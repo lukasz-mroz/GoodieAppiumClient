@@ -15,7 +15,7 @@ namespace GoodieAppiumClient.Features
   public class LOG006 : AppiumManager
   {
     private readonly LoginPage _loginPage;
-    public LOG006(LoginPage loginPage)
+    public LOG006(LoginPage loginPage, RegistrationPage registrationPage)
     {
       _loginPage = loginPage;
     }

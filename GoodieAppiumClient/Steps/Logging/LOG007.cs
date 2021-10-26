@@ -11,13 +11,11 @@ namespace GoodieAppiumClient.Features
   {
     private readonly PermissionLocalizationPage _permissionLocalizationPage;
     private readonly MainPage _mainPage;
-    private readonly ProfilePage _profilePage;
 
     public LoginSteps(PermissionLocalizationPage permissionLocalizationPage, MainPage mainPage, ProfilePage profilePage)
     {
       _permissionLocalizationPage = permissionLocalizationPage;
       _mainPage = mainPage;
-      _profilePage = profilePage;
     }
 
     [When(@"I skip permissionLocalizationPage")]

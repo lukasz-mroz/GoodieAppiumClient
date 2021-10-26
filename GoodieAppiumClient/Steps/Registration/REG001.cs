@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Threading;
 using AppiumClient;
 using GoodieAppiumClient.Pages;
@@ -37,6 +38,7 @@ namespace GoodieAppiumClient.Features
       Thread.Sleep(3000);
       var randomValue = new Random();
       var randomInt = randomValue.Next(10000000);
+
       
       _registrationPage.SumbitRegistrationData($"all{randomInt}@moakt.cc", "123456", $"{randomInt}");
     }

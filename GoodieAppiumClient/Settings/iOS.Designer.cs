@@ -22,14 +22,14 @@ namespace GoodieAppiumClient.Settings {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Global {
+    internal class iOS {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Global() {
+        internal iOS() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace GoodieAppiumClient.Settings {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GoodieAppiumClient.Settings.Global", typeof(Global).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GoodieAppiumClient.Settings.iOS", typeof(iOS).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,38 @@ namespace GoodieAppiumClient.Settings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\\Users\\Lukasz\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js.
+        ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string AppiumJS {
+        internal static string app {
             get {
-                return ResourceManager.GetString("AppiumJS", resourceCulture);
+                return ResourceManager.GetString("app", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\Lukasz\source\repos\GoodieAppiumClient\GoodieAppiumClient\Screenshots\Screen_.
+        ///   Looks up a localized string similar to iOS.
         /// </summary>
-        internal static string ScreenshotsFolder {
+        internal static string platformName {
             get {
-                return ResourceManager.GetString("ScreenshotsFolder", resourceCulture);
+                return ResourceManager.GetString("platformName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://localhost:4723/wd/hub.
+        ///   Looks up a localized string similar to 12.5.5.
         /// </summary>
-        internal static string ServerUri {
+        internal static string platformVersion {
             get {
-                return ResourceManager.GetString("ServerUri", resourceCulture);
+                return ResourceManager.GetString("platformVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string udid {
+            get {
+                return ResourceManager.GetString("udid", resourceCulture);
             }
         }
     }

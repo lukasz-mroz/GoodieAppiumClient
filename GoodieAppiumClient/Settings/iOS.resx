@@ -117,14 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AppiumJS" xml:space="preserve">
-    <value>C:\\Users\\Lukasz\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js</value>
+  <data name="app" xml:space="preserve">
+    <value />
   </data>
-  <data name="ScreenshotsFolder" xml:space="preserve">
-    <value>C:\Users\Lukasz\source\repos\GoodieAppiumClient\GoodieAppiumClient\Screenshots\Screen_</value>
+  <data name="platformName" xml:space="preserve">
+    <value>iOS</value>
   </data>
-  <data name="ServerUri" xml:space="preserve">
-    <value>http://localhost:4723/wd/hub</value>
-    <comment>http://localhost:4723/wd/hub</comment>
+  <data name="platformVersion" xml:space="preserve">
+    <value>12.5.5</value>
+  </data>
+  <data name="udid" xml:space="preserve">
+    <value />
   </data>
 </root>

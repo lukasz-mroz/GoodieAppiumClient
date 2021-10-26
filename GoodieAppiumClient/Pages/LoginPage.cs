@@ -26,8 +26,8 @@ namespace GoodieAppiumClient
     public IList<AndroidElement> googleAccounts => Driver.FindElementsById("com.google.android.gms:id/account_particle_disc");
     public AndroidElement snackBar => Driver.FindElementById("pl.goodie.uat.debug:id/snackbar_text");
     public AndroidElement errorValidation => Driver.FindElementById("pl.goodie.uat.debug:id/textinput_error");
-    
-    
+
+
     /// <summary>
     /// 
     /// </summary>
@@ -51,7 +51,7 @@ namespace GoodieAppiumClient
     /// <summary>
     /// Choose random google account
     /// </summary>
-    public void ChooseRandomAccount()
+    public void ChooseGoogleAccount()
     {
 
       var googleaccounts = googleAccounts.Where(b => b.Displayed);

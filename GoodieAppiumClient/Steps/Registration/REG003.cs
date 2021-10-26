@@ -27,7 +27,7 @@ namespace GoodieAppiumClient.Steps.Registration
     [When(@"I try to register using Google Account")]
     public void WhenITryToRegisterUsingGoogleAccount()
     {
-      _loginPage.ChooseRandomAccount();
+      _loginPage.ChooseGoogleAccount();
     }
 
   }

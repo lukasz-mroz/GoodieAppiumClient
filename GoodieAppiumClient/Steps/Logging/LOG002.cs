@@ -30,7 +30,7 @@ namespace GoodieAppiumClient.Features
     [When(@"I try to login using Google Account")]
     public void WhenITryToLoginUsingGoogleAccount()
     {
-      _loginPage.ChooseRandomAccount();
+      _loginPage.ChooseGoogleAccount();
     }
   }
 }
